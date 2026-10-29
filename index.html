@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09070b">
+<title>Forever, Yin Yin Myint ♡</title>
+<style>
+:root{--bg:#09070b;--panel:#151018;--pink:#ff5ca8;--rose:#ff9bc9;--text:#fff4fa;--muted:#cbb5c4;--line:#472238}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#391326 0%,#170d19 38%,var(--bg) 76%);color:var(--text);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.16;background-image:radial-gradient(#ff8fc2 1px,transparent 1px);background-size:34px 34px}
+main{width:min(720px,100%);margin:auto;padding:18px 17px 50px}.brand{text-align:center;font:10px Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--rose);padding:15px 0 20px}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px 7px;position:relative}
+.heart{font-size:38px;color:var(--pink);filter:drop-shadow(0 0 16px #ff5ca888);animation:pulse 1.7s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.13)}}
+.eyebrow,.kicker{font:10px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--pink)}
+h1{font-weight:normal;font-size:clamp(36px,10vw,70px);line-height:1.02;letter-spacing:-.04em;margin:22px 0 15px}h1 em{font-weight:normal;color:var(--pink)}h2{font-weight:normal;font-size:31px;line-height:1.12;margin:12px 0 16px}
+p{font-size:15px;line-height:1.85;color:#e8d6e1}.intro{max-width:355px;margin:0 auto 25px;color:#e6cbd9}
+button,.btn{border:1px solid var(--pink);border-radius:999px;padding:14px 21px;background:var(--pink);color:#1a0913;font:11px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:.2s}
+button:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px #ff5ca833}.outline{background:transparent;color:var(--rose)}
+.section{margin:18px 0;padding:25px 21px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#1b101beF,#100b12f2);box-shadow:0 16px 50px #0003}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}.stat{text-align:center;padding:14px 4px;border-radius:13px;border:1px solid #ffffff12;background:#ffffff06}.num{font-size:27px;color:var(--pink)}.label{font:9px Arial,sans-serif;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:5px}
+.letter{display:none}.letter.open{display:block;animation:appear .7s ease}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.photo{position:relative;min-height:175px;border:1px dashed #a64d7a;border-radius:14px;background:linear-gradient(145deg,#2b1425,#110b13);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#e7a9c9;font:11px/1.6 Arial,sans-serif}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.song{display:flex;gap:14px;align-items:center}.disc{height:57px;width:57px;flex-shrink:0;border-radius:50%;background:repeating-radial-gradient(circle,#100b12 0 4px,#3a1b30 5px 6px);border:1px solid #743553;display:grid;place-items:center;color:var(--pink);font-size:20px}
+.small{font:11px/1.7 Arial,sans-serif;color:#bba3b4}.end{text-align:center;padding:28px 8px 15px}.float{position:fixed;top:-30px;z-index:9;pointer-events:none;color:#ff78b8;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(340deg);opacity:0}}
+footer{text-align:center;color:#947b8c;font:10px/1.8 Arial,sans-serif;letter-spacing:.1em;padding:20px 0}
+@media(min-width:600px){.section{padding:32px}.photo{min-height:230px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">a little corner of the internet, just for us ♡</div>
+<section class="hero">
+<div class="heart">♥</div><div class="eyebrow">November 29, 2025 · our beginning</div>
+<h1>Forever<br><em>I will stay with you.</em></h1>
+<p class="intro">For my favorite person, Yin Yin Myint.<br>A little surprise made with all my love.</p>
+<button onclick="document.querySelector('#letterSection').scrollIntoView({behavior:'smooth'});setTimeout(openLetter,350)">Open your surprise ♥</button>
+<p class="small" style="margin-top:23px">MADE WITH LOVE BY PHOO MYAT NAY CHI AYE</p>
+</section>
+<section class="section">
+<div class="kicker">our story</div><h2>One date. A thousand little memories.</h2>
+<p>Since November 29, 2025, you've been part of my story in a way that means so much to me. I hope we keep growing together, collecting tiny moments, laughing at silly things, and choosing each other through every season.</p>
+<div class="stats"><div class="stat"><div class="num" id="days">—</div><div class="label">days together</div></div><div class="stat"><div class="num" id="months">—</div><div class="label">months together</div></div><div class="stat"><div class="num">∞</div><div class="label">love to give</div></div></div>
+</section>
+<section class="section" id="letterSection">
+<div class="kicker">a letter for you</div><h2>My Yin Yin Myint, 💌</h2>
+<p>There's something I want you to hear from my heart.</p>
+<button class="outline" id="letterBtn" onclick="openLetter()">Tap to open my letter</button>
+<div class="letter" id="letter"><p>My dearest Yin Yin Myint, ♡</p>
+<p>Happy anniversary, my love. I’m so grateful that our paths crossed and that I get to share this part of my life with you. You’ve become such a special person to me, and even the little moments we share mean more than I can always put into words.</p>
+<p>Thank you for being you—for the smiles, the comfort, the memories, and all the little things that make us <em>us</em>. I know that not every day will be perfect, but I hope we can always talk honestly, listen to each other, and face the hard days hand in hand.</p>
+<p>I want to keep learning about you, supporting your dreams, laughing with you over silly things, and making more beautiful memories together. I hope we keep choosing each other, not just when everything is easy, but every day, in all the small ways that love can show.</p>
+<p><strong style="color:var(--pink);font-weight:normal">I will stay by your side forever.</strong> I can’t predict everything the future will bring, but I know I want to keep building our story with you, one day and one memory at a time.</p>
+<p>You mean so much to me, Yin Yin. Thank you for being part of my world. Here’s to us, to our love, and to all the moments we haven’t lived yet.</p>
+<p>Forever with love,<br>Phoo Myat Nay Chi Aye ♥</p></div>
+</section>
+<section class="section">
+<div class="kicker">our favorite moments</div><h2>Little memories, kept forever 📷</h2>
+<p class="small">Tap a frame to choose a photo for this preview. For the public website, upload the photo files together with the site so Yin Yin can see them too.</p>
+<div class="photos">
+<label class="photo"><span>＋<br>Choose photo 1</span><input type="file" accept="image/*" onchange="photoPreview(this)"></label>
+<label class="photo"><span>＋<br>Choose photo 2</span><input type="file" accept="image/*" onchange="photoPreview(this)"></label>
+<label class="photo"><span>＋<br>Choose photo 3</span><input type="file" accept="image/*" onchange="photoPreview(this)"></label>
+<label class="photo"><span>＋<br>Choose photo 4</span><input type="file" accept="image/*" onchange="photoPreview(this)"></label>
+</div>
+</section>
+<section class="section">
+<div class="kicker">our song</div><h2>Until I Found You ♫</h2>
+<div class="song"><div class="disc">♥</div><div><p style="margin:0 0 3px">Stephen Sanchez</p><p class="small" style="margin:0">A little song for a love that feels like finding home.</p></div></div>
+<p class="small">The song opens in your music app or browser when you tap below; it won't autoplay.</p>
+<a class="btn" href="https://www.youtube.com/results?search_query=Stephen+Sanchez+Until+I+Found+You+official" target="_blank" rel="noopener">Play our song ↗</a>
+</section>
+<section class="section end">
+<div class="heart">♥</div><h2>And if I could promise you one thing…</h2>
+<p>I will keep choosing you, keep caring for us, and keep making space for our story to grow.</p>
+<p style="font-style:italic;color:var(--pink);font-size:20px">“I will be with you forever.”</p>
+<button class="outline" onclick="hearts(42)">Send you a little love ✨</button>
+</section>
+<footer>PHOO MYAT NAY CHI AYE ♡ YIN YIN MYINT<br>OUR STORY · SINCE 29 NOVEMBER 2025</footer>
+</main>
+<script>
+const start=new Date(2025,10,29),today=new Date();const end=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+document.getElementById('days').textContent=Math.max(0,Math.floor((end-start)/86400000));
+let m=(today.getFullYear()-start.getFullYear())*12+(today.getMonth()-start.getMonth());if(today.getDate()<start.getDate())m--;document.getElementById('months').textContent=Math.max(0,m);
+function openLetter(){document.getElementById('letter').classList.add('open');document.getElementById('letterBtn').style.display='none';hearts(18)}
+function photoPreview(input){const file=input.files&&input.files[0];if(!file)return;const box=input.parentElement;let img=box.querySelector('img');if(!img){img=document.createElement('img');box.appendChild(img)}img.src=URL.createObjectURL(file);box.querySelector('span').style.display='none'}
+function hearts(n){for(let i=0;i<n;i++)setTimeout(()=>{const el=document.createElement('span');el.className='float';el.textContent=['♥','♡','✦','💗'][Math.floor(Math.random()*4)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(13+Math.random()*18)+'px';el.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),7500)},i*35)}
+</script>
+</body>
+</html>
